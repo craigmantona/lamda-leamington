@@ -41,9 +41,9 @@
 
     .topbar-inner {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      gap: 24px;
+      gap: 10px;
     }
 
     .brand img {
@@ -54,6 +54,7 @@
     .nav {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 20px;
       flex-wrap: nowrap;
     }
@@ -154,15 +155,6 @@
       padding: 26px;
       box-shadow: 0 14px 30px rgba(88, 28, 104, 0.10);
       border: 1px solid rgba(92, 19, 104, 0.06);
-    }
-
-    .hero-photo {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      object-position: center top;
-      border-radius: 18px;
-      margin-bottom: 20px;
     }
 
     .hero-card h3 {
@@ -331,15 +323,6 @@
     }
 
     @media (max-width: 980px) {
-      .topbar-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav {
-        gap: 14px;
-      }
-
       .hero-grid {
         grid-template-columns: 1fr;
       }
@@ -385,11 +368,12 @@
       }
 
       .topbar-inner {
-        align-items: flex-start;
+        align-items: center;
       }
 
       .nav {
         display: flex;
+        justify-content: flex-start;
         gap: 16px;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -434,7 +418,6 @@
         padding: 24px;
       }
 
-      .hero-photo,
       .bio-photo {
         height: 300px;
       }
@@ -465,7 +448,7 @@
         <div class="hello">LAMDA in Leamington</div>
 
         <div class="hero-title">
-          Private LAMDA tuition in Leamington Spa
+          LAMDA tuition in Leamington Spa
         </div>
 
         <div class="hero-text">
@@ -479,8 +462,6 @@
       </div>
 
       <div class="hero-card">
-       
-
         <h3>Creative, structured, confidence-building tuition</h3>
         <p>
           Tailored lessons for children and teens, with a calm and encouraging approach that develops performance skills, communication and presence.
@@ -515,7 +496,10 @@
         <div class="card">
           <h2>What is LAMDA?</h2>
           <p>
-            LAMDA examinations help develop performance and communication skills that translate into school presentations, interviews and everyday confidence.
+            LAMDA is a world-leading awarding body for examinations in drama, poetry, and communication, aiming to develop confidence and performance skills worldwide.
+          </p>
+          <p>
+            LAMDA Exams inspire and empower learners across the globe to be confident communicators.
           </p>
           <p><strong>Higher grades can carry UCAS points.</strong></p>
         </div>
@@ -535,7 +519,7 @@
             <h2 class="section-title">About Me</h2>
 
             <p>
-              I'm Helen, a Mum of 2 from Leamington Spa. With a foundation built on real industry experience, I bring a practical, insightful approach to drama coaching and LAMDA training. As a former professional actor, I have worked extensively across stage, screen, and voiceover, giving me a well-rounded understanding of performance in all its forms.
+              I'm Helen, a Mum of 2 from Leamington Spa. With a foundation built on real industry experience, I bring a practical, insightful approach to drama coaching and LAMDA training. As a former professional actor, I have worked extensively across stage, screen and voiceover, giving me a well-rounded understanding of performance in all its forms.
             </p>
 
             <p>
@@ -601,8 +585,8 @@
         </p>
 
         <div class="buttons" style="justify-content:center;">
-          <a class="button button-primary" href="mailto:hello@lamdainleamington.co.uk">Email us</a>
-          <a class="button button-secondary" href="https://wa.me/447000000000">WhatsApp</a>
+          <a class="button button-primary" href="mailto:info@lamdainleamington.co.uk">Email us</a>
+          <a class="button button-secondary" href="tel:07973135468">Call 07973 135468</a>
         </div>
 
         <p>
